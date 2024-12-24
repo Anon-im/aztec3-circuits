@@ -121,7 +121,7 @@ template <typename NCT> void read(uint8_t const*& it, PublicCircuitPublicInputs<
     read(it, pis.args);
     read(it, pis.return_values);
     read(it, pis.emitted_events);
-    read(it, pis.emitted_ouputs);
+    read(it, pis.emitted_outputs);
 
     read(it, pis.state_transitions);
     read(it, pis.state_reads);
@@ -144,7 +144,7 @@ void write(std::vector<uint8_t>& buf, PublicCircuitPublicInputs<NCT> const& priv
     write(buf, pis.args);
     write(buf, pis.return_values);
     write(buf, pis.emitted_events);
-    write(buf, pis.emitted_ouputs);
+    write(buf, pis.emitted_outputs);
 
     write(buf, pis.state_transitions);
     write(buf, pis.state_reads);
